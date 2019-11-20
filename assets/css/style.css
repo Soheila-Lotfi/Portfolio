@@ -126,14 +126,76 @@ section #myimage{
 /* projects section */
 
 #projects{
-    display:grid;
+    margin: auto;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5%;
     grid-template-rows: 1fr;
-    width:80%;
-    height: 20%;
+    width: 80%;
+    height: 15%;
 }
 
 .card{
     border:solid;
 }
+
+  .image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .overlay {
+    position: relative;
+    top: -98%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(229, 235, 240);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+/* .cardbody{
+    background: url('../images/back.png');
+    cursor: pointer;
+    transition: opacity .5s;
+    height: 100%;
+    z-index:1;
+}
+
+ .card .text{
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #1B242F;
+    position: relative;
+    top: -85%;
+    
+}
+.cardbody:hover .text{
+    opacity: 1;
+}
+/* .text:hover{
+    opacity:1;
+    z-index:2;} */
