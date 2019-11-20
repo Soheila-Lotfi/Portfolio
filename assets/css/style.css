@@ -175,27 +175,3 @@ section #myimage{
     transform: translate(-50%, -50%);
     text-align: center;
   }
-/* .cardbody{
-    background: url('../images/back.png');
-    cursor: pointer;
-    transition: opacity .5s;
-    height: 100%;
-    z-index:1;
-}
-
- .card .text{
-    z-index: 2;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    color: #1B242F;
-    position: relative;
-    top: -85%;
-    
-}
-.cardbody:hover .text{
-    opacity: 1;
-}
-/* .text:hover{
-    opacity:1;
-    z-index:2;} */
