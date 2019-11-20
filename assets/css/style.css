@@ -135,17 +135,17 @@ section #myimage{
     height: 15%;
 }
 
-.card{
+.card-project{
     border:solid;
 }
 
-  .image {
+  .image-project {
     display: block;
     width: 100%;
     height: 100%;
   }
   
-  .overlay {
+  .overlay-project {
     position: relative;
     top: -98%;
     bottom: 0;
@@ -160,11 +160,11 @@ section #myimage{
     padding: 0;
   }
   
-  .card:hover .overlay {
+  .card-project:hover .overlay-project {
     opacity: 1;
   }
   
-  .text {
+  .text-project {
     color: black;
     font-size: 20px;
     position: absolute;
