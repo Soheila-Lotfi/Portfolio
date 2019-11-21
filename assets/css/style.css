@@ -77,12 +77,24 @@ header #developer{
     color: #F7F6F5;
     font-size: 2.5rem;
     margin: 30% 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     letter-spacing: .4rem;
+    animation-name: developer;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
+
+@keyframes developer{
+   0%   {color:#F7F6F5;}
+   25%  {color:#FF3E55; }
+  50%  {color:#FF3E55; }
+  75%  {color:#FF3E55; }
+  100%  {color:#F7F6F5; }}
+ 
+
 /* ----About Me----- */
-#aboutme{
+/* #aboutme{
     display: grid;
     grid-template-columns: 10% 1fr 10% 50%;
     grid-template-rows: 20% 1fr 20%;
@@ -99,6 +111,7 @@ section #myimage{
     grid-row:2/3
 }
 
+
 section #myimage{
     grid-column: 2/3;
     grid-row:2/3;
@@ -110,11 +123,11 @@ section #myimage{
 }
   
 
-#aboutme h3{
+#aboutme .soheila-about{
     grid-column: 4/5;
     grid-row: 1/2;
 }
-#aboutme p{
+#aboutme #description{
     grid-column: 4/5;
     grid-row: 2/3;
 }
@@ -122,6 +135,58 @@ section #myimage{
     grid-column: 4/5;
     grid-row: 3/4;
 }
+.soheila-about {
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-size: .83rem;
+    color: #F7F6F5;
+    line-height: 2rem;
+} */
+
+#aboutme{
+
+    width:60%;
+    height: 20%;
+    border:solid;
+    margin: 10% auto;
+    position:relative;
+}
+#myimage {
+    width: 30%;
+    height: 70%;
+    border: solid;
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    /* background-image: url('../images/myimage.jpg'); */
+}
+
+#myimage img{
+    width:100%;
+    height:100%;
+    position: absolute;
+
+}
+#aboutme-description {
+    display: inline-block;
+    width: 30%;
+    right: 15%;
+    top: 2%;
+position: absolute;
+}
+
+#color{
+    position: absolute;
+    height: 10%;
+    background-color: #021D44;
+    width: 100%;
+    bottom: 0;
+}
+
 
 /* projects section */
 
@@ -130,19 +195,35 @@ section #myimage{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5%;
-    grid-template-rows: 1fr;
+    grid-row-gap: 5%;
+    grid-template-rows: 7% 1fr 1fr;
     width: 80%;
-    height: 15%;
+    height: 45%;
 }
 
 .card-project{
     border:solid;
+    grid-row:2/3;
+    border-radius: 20px;
+}
+.card-project-secondrow{
+    border:solid;
+    grid-row:3/4;
+    border-radius: 20px;
 }
 
   .image-project {
     display: block;
     width: 100%;
     height: 100%;
+    border-radius: 17px;
+  }
+  .text-project{
+    font-family: 'Inconsolata', monospace;
+  }
+  .text-project button{
+    margin-top: 25%;
+   
   }
   
   .overlay-project {
@@ -158,9 +239,13 @@ section #myimage{
     background-color: rgb(229, 235, 240);
     margin: 0;
     padding: 0;
+    border-radius: 20px;
   }
   
   .card-project:hover .overlay-project {
+    opacity: 1;
+  }
+  .card-project-secondrow:hover .overlay-project {
     opacity: 1;
   }
   
@@ -174,4 +259,74 @@ section #myimage{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  #projectstopic{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 2rem;
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+    border-bottom: solid;
+    border-width: thin;
+    animation-name: projects;
+    animation-duration: 4s;
+  }
+  @keyframes projects{
+    0%   {grid-column: 1/2; border:none;}
+
+    100%  {grid-column: 2/3; border:thin;}
+  }
+
+  /* footer */
+  footer{
+    position: relative;
+    bottom: 0;
+    top: 10%;
+    height: 7%;
+    width: 100%;
+    background-color: #021D44;
+    display:grid;
+    grid-template-columns: 1fr 15%;
+    grid-template-rows: 1fr;
+  }
+
+  #links{
+
+    grid-column: 2/3;
+    height:100%;
+    background-color: rgba(247,246,245,0.1);
+    padding-left: 35%;
+    padding-top: 15%;
+
+  }
+
+  #links .fab{
+
+    font-size: 2rem;
+    color: white;
+    display: block;
+    margin-bottom: 7%;
+  }
+  #links a{
+      text-decoration: none;
+  }
+
+  footer p{
+  
+   
+    margin-left: 10%;
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-size: .83rem;
+    color: #F7F6F5;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  #contact-info{
+margin-top:5%;
   }
