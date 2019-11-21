@@ -150,20 +150,19 @@ section #myimage{
 
     width:60%;
     height: 20%;
-    border:solid;
+
     margin: 10% auto;
     position:relative;
 }
 #myimage {
     width: 30%;
     height: 70%;
-    border: solid;
+
     display: inline-block;
     position: absolute;
-    top: 5%;
-    left: 10%;
-    /* background-image: url('../images/myimage.jpg'); */
-}
+    top: 15%;
+    left: 20%;}
+  
 
 #myimage img{
     width:100%;
@@ -182,12 +181,48 @@ position: absolute;
 #color{
     position: absolute;
     height: 10%;
-    background-color: #021D44;
+    background-color: #E5E9F4;
     width: 100%;
     bottom: 0;
 }
 
+#image-back{
 
+    position: absolute;
+    z-index: -1;
+    background-color: #E5E9F4;
+    width: 45%;
+    height:100%;
+}
+#text{
+    position: absolute;
+    color: #F7F6F5;
+    font-family: 'Inconsolata', monospace;
+    left: 8%;
+    top: 9%;
+    font-size: 2rem;
+    letter-spacing: 0.8rem;
+    z-index: 2;
+}
+#border{
+    position: absolute;
+    right:0;
+    width:10%;
+    height: 10%;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: #E5E9F4;
+}
+.soheila-about {
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-size: .83rem;
+    color: #F7F6F5;
+    line-height: 2rem;
+} 
 /* projects section */
 
 #projects{
