@@ -80,73 +80,11 @@ header #developer{
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     letter-spacing: .4rem;
-    /* animation-name: developer;
-    animation-duration: 4s;
-    animation-delay: 1s; */
+
   
 }
 
-/* @keyframes developer{
-   0%   {color:#F7F6F5;}
-   25%  {color:#FF3E55; }
-  50%  {color:#FF3E55; }
-  75%  {color:#FF3E55; }
-  100%  {color:#F7F6F5; }} */
- 
-
-/* ----About Me----- */
-/* #aboutme{
-    display: grid;
-    grid-template-columns: 10% 1fr 10% 50%;
-    grid-template-rows: 20% 1fr 20%;
-    height: 15%;
-    width: 60%;
-    margin: 10% auto;
-    border-color: #021D44;
-    border: dotted;
-    background-color: #eecb67;
-}
-
-section #myimage{
-    grid-column: 2/3;
-    grid-row:2/3
-}
-
-
-section #myimage{
-    grid-column: 2/3;
-    grid-row:2/3;
-    justify-self: center;
-}
-#myimage img{
-    width: 60%;
-    border-radius: 150px;
-}
-  
-
-#aboutme .soheila-about{
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-#aboutme #description{
-    grid-column: 4/5;
-    grid-row: 2/3;
-}
-#aboutme a{
-    grid-column: 4/5;
-    grid-row: 3/4;
-}
-.soheila-about {
-    font-family: 'Inconsolata', monospace;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    letter-spacing: .5rem;
-    text-transform: uppercase;
-    font-size: .83rem;
-    color: #F7F6F5;
-    line-height: 2rem;
-} */
-
+ /* aboutme */
 #aboutme{
 
     width:60%;
@@ -156,10 +94,10 @@ section #myimage{
     position:relative;
     animation: 3s ease-in 1s 1 reverse both running slidein;
 }
-@keyframes slidein{
+/* @keyframes slidein{
     from { transform: scaleX(1); }
     to   { transform: scaleX(0); }
-}
+} */
 #myimage {
     width: 30%;
     height: 70%;
@@ -334,6 +272,37 @@ section #myimage{
     animation-name: card6;
     animation-duration: 4s;
 }
+/* @keyframes card1{
+    0%   {top:850%;}
+
+    100%  {top:25%;}
+  }
+  @keyframes card2{
+    0%   {top:850%;}
+
+    100%  {top:25%;}
+  }
+  @keyframes card3{
+    0%   {top:850%;}
+
+    100%  {top:25%;}
+  }
+  @keyframes card4{
+    0%   {top:850%;}
+
+    100%  {top:70%;}
+  }
+  @keyframes card5{
+    0%   {top:850%;}
+
+    100%  {top:70%;}
+  }
+  @keyframes card6{
+    0%   {top:850%;}
+
+    100%  {top:70%;}
+  }
+   */
 
   .image-project {
     display: block;
@@ -360,10 +329,10 @@ section #myimage{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgb(229, 235, 240);
+    background-color: white;
     margin: 0;
     padding: 0;
-    border-radius: 20px;
+    border-radius: 18px;
   }
   
   .card-project1:hover .overlay-project {
@@ -408,14 +377,14 @@ section #myimage{
     font-family: 'Inconsolata', monospace;
     border-bottom: solid;
     border-width: thin;
-    animation-name: projects;
+    animation-name: 3s ease-in 1s 1 reverse both running projects;
     animation-duration: 4s;
   }
-  @keyframes projects{
+  /* @keyframes projects{
     0%   {top:850%;}
 
     100%  {top:0;}
-  }
+  } */
 
   /* footer */
   footer{
@@ -485,3 +454,84 @@ position: absolute;
     width: 50%;
   }
 
+button{
+    border: 2px solid #FF3E55;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+    .card-project1{
+        border:solid;
+        border-radius: 20px;
+        position: relative;
+        top: 25%;
+        left: 20%;
+    width: 60%;
+    height: 30%;
+        animation-name: card1;
+        animation-duration: 4s;
+    }
+    .card-project2{
+        border:solid;
+    
+        border-radius: 20px;
+        position: relative;
+        top: 25%;
+        left: 20%;
+        width: 60%;
+        height: 30%;
+        left: 35%;
+        animation-name: card2;
+        animation-duration: 4s;
+    }
+    .card-project3{
+        border:solid;
+    
+        border-radius: 20px;
+        position: relative;
+        top: 25%;
+        left: 20%;
+        width: 60%;
+        height: 30%;
+        left: 70%;
+        animation-name: card3;
+        animation-duration: 4s;
+    }
+    
+    
+    .card-project-secondrow1{
+        border:solid;
+        border-radius: 20px;
+        position: relative;
+        top: 70%;
+        left: 20%;
+    width: 60%;
+    height: 30%;
+        animation-name: card4;
+        animation-duration: 4s;
+    }
+    .card-project-secondrow2{
+        border:solid;
+        border-radius: 20px;
+        position: relative;
+        top: 70%;
+        left: 20%;
+        width: 60%;
+        height: 30%;
+        left: 35%;
+        animation-name: card5;
+        animation-duration: 4s;
+    }
+    .card-project-secondrow3{
+        border:solid;
+        border-radius: 20px;
+        position: relative;
+        top: 70%;
+        left: 20%;
+        width: 60%;
+        height: 30%;
+        left: 70%;
+        animation-name: card6;
+        animation-duration: 4s;
+    }
+  }
