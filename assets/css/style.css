@@ -460,40 +460,164 @@ button{
 
 /* media queries */
 @media only screen and (max-width: 600px) {
+
+    body{
+        height:1500px;
+    }
+    /* header */
+    
+ul li a{
+    text-decoration: none;
+    color: #F7F6F5;
+    font-size: 12px;
+    
+}
+ul{
+    margin-top: 100px;
+    padding: 10%;
+}
+
+
+    /* aboutme */
+    #aboutme{
+
+        width: 95%;
+        height: 30%;
+        margin: 10% auto;
+        position: relative;
+        animation: 3s ease-in 1s 1 reverse both running slidein;
+    }
+    /* @keyframes slidein{
+        from { transform: scaleX(1); }
+        to   { transform: scaleX(0); }
+    } */
+    #myimage {
+        width: 40%;
+    height: 45%;
+    display: inline-block;
+    position: absolute;
+    top: 15%;
+    left: 10%;}
+      
+    
+    #myimage img{
+        width:100%;
+        height:100%;
+        position: absolute;
+    
+    }
+    #aboutme-description {
+        display: inline-block;
+        width: 40%;
+        right: 6%;
+        top: 20%;
+        position: absolute;
+    }
+    
+    #color{
+        position: absolute;
+        height: 10%;
+        background-color: #E5E9F4;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    #image-back{
+    
+        position: absolute;
+        z-index: -1;
+        background-color: #E5E9F4;
+        width: 45%;
+        height:100%;
+    }
+    #text{
+        position: absolute;
+        color: #F7F6F5;
+        font-family: 'Inconsolata', monospace;
+        left: 3%;
+        top: 9%;
+        font-size: 1.5rem;
+        letter-spacing: 0.8rem;
+        z-index: 2;
+    }
+    #border{
+        position: absolute;
+        right:0;
+        width:10%;
+        height: 10%;
+        border-width: 1px 1px 0px 0px;
+        border-style: solid;
+        border-color: #E5E9F4;
+    }
+    .soheila-about {
+        font-family: 'Inconsolata', monospace;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        text-transform: uppercase;
+        font-size: .83rem;
+        color: black;
+        /* line-height: 2rem; */
+        margin: 0;
+    } 
+    
+    #soheila-about-developer{
+        font-family: 'Inconsolata', monospace;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-size: .6rem;
+        color: black;}
+    
+    
+    #description{
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-weight: 400;
+        letter-spacing: .1rem;
+        font-size: .6rem;
+        color: black;
+        margin-top: 15%;
+    
+    }
+
+    /* projects */
+    #projects{
+        margin: auto;
+        width: 95%;
+        height: 45%;
+        position: relative;
+        margin-bottom: 10%;
+    }
+    
     .card-project1{
         border:solid;
         border-radius: 20px;
         position: relative;
-        top: 25%;
+        width: 75%;
+        height: 45%;
         left: 20%;
-    width: 60%;
-    height: 30%;
         animation-name: card1;
         animation-duration: 4s;
     }
     .card-project2{
         border:solid;
-    
         border-radius: 20px;
         position: relative;
-        top: 25%;
+        width: 75%;
+        height: 45%;
         left: 20%;
-        width: 60%;
-        height: 30%;
-        left: 35%;
         animation-name: card2;
         animation-duration: 4s;
     }
     .card-project3{
         border:solid;
-    
         border-radius: 20px;
         position: relative;
-        top: 25%;
+        width: 75%;
+        height: 45%;
         left: 20%;
-        width: 60%;
-        height: 30%;
-        left: 70%;
         animation-name: card3;
         animation-duration: 4s;
     }
@@ -503,10 +627,9 @@ button{
         border:solid;
         border-radius: 20px;
         position: relative;
-        top: 70%;
+        width: 75%;
+        height: 45%;
         left: 20%;
-    width: 60%;
-    height: 30%;
         animation-name: card4;
         animation-duration: 4s;
     }
@@ -514,11 +637,9 @@ button{
         border:solid;
         border-radius: 20px;
         position: relative;
-        top: 70%;
+        width: 75%;
+        height: 45%;
         left: 20%;
-        width: 60%;
-        height: 30%;
-        left: 35%;
         animation-name: card5;
         animation-duration: 4s;
     }
@@ -526,12 +647,34 @@ button{
         border:solid;
         border-radius: 20px;
         position: relative;
-        top: 70%;
+        width: 75%;
+        height: 45%;
         left: 20%;
-        width: 60%;
-        height: 30%;
-        left: 70%;
         animation-name: card6;
         animation-duration: 4s;
     }
+
+    /* footer */
+    footer{
+        height: 7%;
+        position: relative;
+        bottom: 25%;
+        width: 100%;
+        background-color: #021D44;
+        top:107%;
+    }
+    #links .fa-github-square{
+
+        position: absolute;
+        top: 25%;
+        right: 20%;
+      }
+    
+      
+      #links .fa-linkedin{
+    
+        position: absolute;
+        top: 55%;
+        right: 20%;
+      }
   }
