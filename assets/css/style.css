@@ -80,17 +80,18 @@ header #developer{
     /* font-family: 'Source Sans Pro', sans-serif; */
     font-weight: bold;
     letter-spacing: .4rem;
-    animation-name: developer;
+    /* animation-name: developer;
     animation-duration: 4s;
-    animation-delay: 1s;
+    animation-delay: 1s; */
+  
 }
 
-@keyframes developer{
+/* @keyframes developer{
    0%   {color:#F7F6F5;}
    25%  {color:#FF3E55; }
   50%  {color:#FF3E55; }
   75%  {color:#FF3E55; }
-  100%  {color:#F7F6F5; }}
+  100%  {color:#F7F6F5; }} */
  
 
 /* ----About Me----- */
@@ -153,6 +154,11 @@ section #myimage{
 
     margin: 10% auto;
     position:relative;
+    animation: 3s ease-in 1s 1 reverse both running slidein;
+}
+@keyframes slidein{
+    from { transform: scaleX(1); }
+    to   { transform: scaleX(0); }
 }
 #myimage {
     width: 30%;
@@ -172,10 +178,10 @@ section #myimage{
 }
 #aboutme-description {
     display: inline-block;
-    width: 30%;
-    right: 15%;
-    top: 2%;
-position: absolute;
+    width: 40%;
+    right: 6%;
+    top: 20%;
+    position: absolute;
 }
 
 #color{
@@ -220,31 +226,98 @@ position: absolute;
     letter-spacing: .5rem;
     text-transform: uppercase;
     font-size: .83rem;
-    color: #F7F6F5;
-    line-height: 2rem;
+    color: black;
+    /* line-height: 2rem; */
+    margin: 0;
 } 
+
+#soheila-about-developer{
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-size: .6rem;
+    color: black;}
+
+
+#description{
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    /* text-transform: uppercase; */
+    font-size: .7rem;
+    color: black;
+    margin-top: 15%;
+
+}
+
+
 /* projects section */
 
 #projects{
     margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5%;
-    grid-row-gap: 5%;
-    grid-template-rows: 7% 1fr 1fr;
     width: 80%;
-    height: 45%;
+    height: 35%;
+    position: relative;
 }
 
-.card-project{
+.card-project1{
     border:solid;
-    grid-row:2/3;
     border-radius: 20px;
+    position: absolute;
+    top: 25%;
+    width: 27%;
+    height: 40%;
 }
-.card-project-secondrow{
+.card-project2{
     border:solid;
-    grid-row:3/4;
+
     border-radius: 20px;
+    position: absolute;
+    top: 25%;
+    width: 27%;
+    height: 40%;
+    left: 40%;
+}
+.card-project3{
+    border:solid;
+
+    border-radius: 20px;
+    position: absolute;
+    top: 25%;
+    width: 27%;
+    height: 40%;
+    left: 80%;
+}
+
+
+.card-project-secondrow1{
+    border:solid;
+    /* grid-row:3/4; */
+    border-radius: 20px;
+    position: absolute;
+    bottom:0;
+    width:25%;
+}
+.card-project-secondrow2{
+    border:solid;
+    /* grid-row:3/4; */
+    border-radius: 20px;
+    position: absolute;
+    bottom:0;
+    width:25%;
+    left: 40%;
+}
+.card-project-secondrow3{
+    border:solid;
+    /* grid-row:3/4; */
+    border-radius: 20px;
+    position: absolute;
+    bottom:0;
+    width:25%;
+    left: 80%;
 }
 
   .image-project {
@@ -262,8 +335,8 @@ position: absolute;
   }
   
   .overlay-project {
-    position: relative;
-    top: -98%;
+    position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -277,12 +350,26 @@ position: absolute;
     border-radius: 20px;
   }
   
-  .card-project:hover .overlay-project {
+  .card-project1:hover .overlay-project {
     opacity: 1;
   }
-  .card-project-secondrow:hover .overlay-project {
+
+  .card-project2:hover .overlay-project {
     opacity: 1;
   }
+  .card-project3:hover .overlay-project {
+    opacity: 1;
+  }
+  .card-project-secondrow1:hover .overlay-project {
+    opacity: 1;
+  }
+  .card-project-secondrow2:hover .overlay-project {
+    opacity: 1;
+  }
+  .card-project-secondrow3:hover .overlay-project {
+    opacity: 1;
+  }
+  
   
   .text-project {
     color: black;
@@ -297,8 +384,8 @@ position: absolute;
   }
 
   #projectstopic{
-    grid-column: 2/3;
-    grid-row: 1/2;
+ position: absolute;
+ top:0;
     font-size: 2rem;
     margin: 0 auto;
     font-family: 'Inconsolata', monospace;
@@ -315,20 +402,17 @@ position: absolute;
 
   /* footer */
   footer{
-    position: relative;
-    bottom: 0;
-    top: 10%;
     height: 7%;
+    position: relative;
+
+    bottom: 25%;
     width: 100%;
     background-color: #021D44;
-    display:grid;
-    grid-template-columns: 1fr 15%;
-    grid-template-rows: 1fr;
-  }
+    bottom: 0;}
 
   #links{
-
-    grid-column: 2/3;
+position:absolute;
+  right:0;
     height:100%;
     background-color: rgba(247,246,245,0.1);
     padding-left: 35%;
