@@ -465,7 +465,74 @@ button{
 }
 
 /* media queries */
-@media only screen and (max-width: 600px) {
+    /* max-width=980px*/
+
+    @media screen and (max-width:980px){
+
+        #myimage{
+            
+        }
+      }
+
+    /* max-width=768px------tablets*/
+
+    @media screen and (max-width:768px){
+
+      #description{
+        font-size: .6rem;
+      }
+
+      #aboutme{
+          width:70%;
+      }
+      #myimage{
+
+        left:10%;
+        width:40%;
+      }
+
+      #projects{
+          width:90%;
+      }
+      .card-project1{
+        width: 30%;
+        height: 35%;
+        top: 17%;
+      }
+      .card-project2{
+        width: 30%;
+        height: 35%;
+        top: 17%;
+    }
+
+    .card-project3{
+        width: 30%;
+    height: 35%;
+    top: 17%;
+    }
+    .card-project-secondrow1{
+        width: 30%;
+        height: 35%;
+        top: 60%;
+    }
+
+    .card-project-secondrow2{
+        width: 30%;
+        height: 35%;
+        top: 60%;
+    }
+    .card-project-secondrow3{
+        width: 30%;
+    height: 35%;
+    top: 60%;
+    }
+
+
+      }
+
+      /* cell phones */
+    
+@media only screen and (max-width: 640px) {
 
     body{
         height:1500px;
