@@ -52,6 +52,12 @@ ul li a{
     color: #F7F6F5;
     
 }
+ul li a:hover{
+
+    text-decoration: none;
+    color: #FF3E55;
+    
+}
 header #hi{
     grid-column: 1/2;
     grid-row: 3/4;
@@ -589,6 +595,10 @@ ul{
         height: 45%;
         position: relative;
         margin-bottom: 10%;
+        
+    }
+    #projectstopic{
+        left:30%;
     }
     
     .card-project1{
@@ -597,9 +607,10 @@ ul{
         position: relative;
         width: 75%;
         height: 45%;
-        left: 20%;
+        left: 13%;
         animation-name: card1;
         animation-duration: 4s;
+        top: 15%;
     }
     .card-project2{
         border:solid;
@@ -607,9 +618,10 @@ ul{
         position: relative;
         width: 75%;
         height: 45%;
-        left: 20%;
+        left: 13%;
         animation-name: card2;
         animation-duration: 4s;
+        top:20%;
     }
     .card-project3{
         border:solid;
@@ -617,9 +629,10 @@ ul{
         position: relative;
         width: 75%;
         height: 45%;
-        left: 20%;
+        left: 13%;
         animation-name: card3;
         animation-duration: 4s;
+        top:25%;
     }
     
     
@@ -629,9 +642,10 @@ ul{
         position: relative;
         width: 75%;
         height: 45%;
-        left: 20%;
+        left: 13%;
         animation-name: card4;
         animation-duration: 4s;
+        top:30%;
     }
     .card-project-secondrow2{
         border:solid;
@@ -639,9 +653,10 @@ ul{
         position: relative;
         width: 75%;
         height: 45%;
-        left: 20%;
+        left: 13%;
         animation-name: card5;
         animation-duration: 4s;
+        top:35%;
     }
     .card-project-secondrow3{
         border:solid;
@@ -649,9 +664,10 @@ ul{
         position: relative;
         width: 75%;
         height: 45%;
-        left: 20%;
+        left: 13%;
         animation-name: card6;
         animation-duration: 4s;
+        top:40%;
     }
 
     /* footer */
@@ -661,7 +677,7 @@ ul{
         bottom: 25%;
         width: 100%;
         background-color: #021D44;
-        top:107%;
+        top:100%;
     }
     #links .fa-github-square{
 
