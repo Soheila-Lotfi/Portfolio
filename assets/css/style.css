@@ -131,7 +131,7 @@ header #developer{
 #color{
     position: absolute;
     height: 10%;
-    background-color: #E5E9F4;
+    background-color: #e5f4e8;
     width: 100%;
     bottom: 0;
 }
@@ -140,7 +140,7 @@ header #developer{
 
     position: absolute;
     z-index: -1;
-    background-color: #E5E9F4;
+    background-color: #e5f4e8;
     width: 45%;
     height:100%;
 }
@@ -148,12 +148,12 @@ header #developer{
     position: absolute;
     color: #F7F6F5;
     font-family: 'Inconsolata', monospace;
-    left: 8%;
-    top: 9%;
+    left: 5%;
+    top: 7%;
     font-size: 2rem;
     letter-spacing: 0.8rem;
     z-index: 2;
-}
+    font-weight: bold;}
 #border{
     position: absolute;
     right:0;
@@ -167,12 +167,12 @@ header #developer{
     font-family: 'Inconsolata', monospace;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
-    letter-spacing: .5rem;
+    letter-spacing: .1rem;
     text-transform: uppercase;
     font-size: .83rem;
     color: black;
-    /* line-height: 2rem; */
     margin: 0;
+    font-weight: bold;
 } 
 
 #soheila-about-developer{
@@ -594,7 +594,7 @@ ul{
     #color{
         position: absolute;
         height: 10%;
-        background-color: #E5E9F4;
+        background-color: #e5f4e8;
         width: 100%;
         bottom: 0;
     }
@@ -603,19 +603,21 @@ ul{
     
         position: absolute;
         z-index: -1;
-        background-color: #E5E9F4;
+        background-color: #e5f4e8;
         width: 45%;
         height:100%;
     }
     #text{
         position: absolute;
-        color: #F7F6F5;
         font-family: 'Inconsolata', monospace;
-        left: 3%;
-        top: 9%;
-        font-size: 1.5rem;
+        left: 5%;
+        top: 7%;
+        color: #3fb5a7;
+        font-size: 2rem;
         letter-spacing: 0.8rem;
         z-index: 2;
+        font-weight: bold;
+        opacity: 0.5;
     }
     #border{
         position: absolute;
