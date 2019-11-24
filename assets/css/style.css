@@ -12,7 +12,7 @@ header{
     grid-template-columns: 15% 1fr 15%;
     grid-template-rows: 20% 1fr 2fr 1fr;
     height:25%;
-    background-color: #021D44;
+    background-color: #032A33;
 }
 
 #logo{
@@ -65,7 +65,7 @@ header #hi{
 }
 #hi p{
     font-family: 'Inconsolata', monospace;
-    color: #FF3E55;
+    color: #650300;
     font-size: 4rem;
     margin: 0;
     margin-left: 10%;
@@ -131,7 +131,7 @@ header #developer{
 #color{
     position: absolute;
     height: 10%;
-    background-color: #e5f4e8;
+    background-color: #739E5A;
     width: 100%;
     bottom: 0;
 }
@@ -140,14 +140,14 @@ header #developer{
 
     position: absolute;
     z-index: -1;
-    background-color: #e5f4e8;
+    background-color: #739E5A;
     width: 45%;
     height:100%;
 }
 #text{
     position: absolute;
-    color: #F7F6F5;
-    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-family: 'Poppins', sans-serif;
     left: 5%;
     top: 7%;
     font-size: 2rem;
@@ -164,7 +164,7 @@ header #developer{
     border-color: #E5E9F4;
 }
 .soheila-about {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     letter-spacing: .1rem;
@@ -176,7 +176,7 @@ header #developer{
 } 
 
 #soheila-about-developer{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     letter-spacing: .2rem;
@@ -186,7 +186,7 @@ header #developer{
 
 
 #description{
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
     letter-spacing: .1rem;
@@ -317,6 +317,125 @@ header #developer{
     border-radius: 17px;
 
   }
+
+  #back-card-project1 {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 17px;
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c),url('../images/xipto1.png') ; */
+    background: linear-gradient(to bottom, rgb(95, 104, 115,0.6) 0%,rgb(202, 184, 204,0.9) 100%),url(../images/xipto1.png);
+   
+  }
+  #back-card-project1 p{
+    position: absolute;
+    left: 11%;
+    top: 48%;
+    font-size: 36px;
+    color: #053f3a;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  
+  #back-card-project2 {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 17px;
+    background-repeat: no-repeat;
+background-size: cover;
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c),url('../images/xipto1.png') ; */
+    background: linear-gradient(to bottom,rgba(202,184,204,0) 0%, rgb(95, 104, 115,0) 100%),url('../images/retailfy1.png');
+   
+  }
+  #back-card-project2 p{
+    position: absolute;
+    left: 11%;
+    top: 75%;
+    font-size: 36px;
+    color: #910d3a;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+
+  #back-card-project3 {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 17px;
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c),url('../images/xipto1.png') ; */
+    background: linear-gradient(to bottom, rgb(156, 232, 232,.6) 0%,rgb(232, 212, 212) 100%),url(../images/mongo1.png);
+   
+  }
+  #back-card-project3 p{
+    position: absolute;
+    left: 11%;
+    top: 25%;
+    font-size: 36px;
+    color: #144b76;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  #back-card-project4 {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 17px;
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c),url('../images/xipto1.png') ; */
+    background: linear-gradient(to bottom, rgb(153, 24, 30,.5) 0%,rgb(240, 0, 46,.9) 100%),url(../images/clicky\ game1.jpg);
+}
+
+  #back-card-project4 p{
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    font-size: 36px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  #back-card-project5 {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 17px;
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c),url('../images/xipto1.png') ; */
+    background: linear-gradient(to bottom, rgb(170, 255, 160, 0.5) 0%,rgb(98, 255, 178,0.5) 100%),url(../images/google-book1.png);
+}
+
+
+  #back-card-project5 p{
+    position: absolute;
+    left: 48%;
+    top: 34%;
+    font-size: 30px;
+    color: #4b6a27;
+    font-family: 'Poppins', sans-serif;
+  }
+  #back-card-project6 {
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 17px;
+    /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c),url('../images/xipto1.png') ; */
+    background: linear-gradient(to bottom, rgb(71, 105, 105,.5) 0%,rgb(122, 181, 181,.5) 100%),url(../images/smartgardening.png);
+   
+  }
+  #back-card-project6 p{
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    font-size: 30px;
+    color: #ea977d;
+    font-family: 'Poppins', sans-serif;
+    
+  }
   .text-project{
     font-family: 'Inconsolata', monospace;
   }
@@ -398,7 +517,7 @@ header #developer{
     position: relative;
     bottom: 25%;
     width: 100%;
-    background-color: #021D44;
+    background-color: #032A33;
     bottom: 0;}
 
   #links{
@@ -465,16 +584,83 @@ button{
 }
 
 /* media queries */
+
+    /* max-width=1024px*/
+    @media screen and (max-width:1024px){
+
+        #text{
+            top: 8%;
+    font-size: 1.6rem;
+        }
+        #back-card-project1 p{
+
+            left: 11%;
+            top: 44%;
+            font-size: 30px;
+    
+            
+          }
+          
+     
+          #back-card-project2 p{
+             left: 11%;
+            top: 78%;
+            font-size: 30px;
+      
+            
+          }
+        
+         
+          #back-card-project3 p{
+    
+            left: 11%;
+            top: 25%;
+            font-size: 30px;
+           ;
+            
+          }
+         
+        
+          #back-card-project4 p{
+     
+            left: 26%;
+            top: 30%;
+            font-size: 30px;
+           
+            
+          }
+         
+        
+          #back-card-project5 p{
+          
+            left: 63%;
+            top: 44%;
+            font-size: 18px;
+           
+          }
+         
+          #back-card-project6 p{
+          
+            left: 15%;
+            top: 45%;
+            font-size: 24px;
+         
+            
+          }
+    
+    }
+
     /* max-width=980px*/
 
     @media screen and (max-width:980px){
 
         #myimage{
-            height: 60%;
+            height: 50%;
         }
         #text{
-            font-size: 1.5rem;
-            left:4%;
+            font-size: 1rem;
+            left: 4%;
+            top: 11%;
         }
       }
 
@@ -484,6 +670,7 @@ button{
 
       #description{
         font-size: .6rem;
+        font-family: 'Poppins', sans-serif;
       }
 
       #aboutme{
@@ -530,6 +717,62 @@ button{
     height: 35%;
     top: 60%;
     }
+    #back-card-project1 p{
+
+        left: 11%;
+        top: 44%;
+        font-size: 30px;
+
+        
+      }
+      
+ 
+      #back-card-project2 p{
+         left: 11%;
+        top: 78%;
+        font-size: 30px;
+  
+        
+      }
+    
+     
+      #back-card-project3 p{
+
+        left: 11%;
+        top: 25%;
+        font-size: 30px;
+       ;
+        
+      }
+     
+    
+      #back-card-project4 p{
+ 
+        left: 26%;
+        top: 30%;
+        font-size: 30px;
+       
+        
+      }
+     
+    
+      #back-card-project5 p{
+      
+        left: 63%;
+        top: 44%;
+        font-size: 18px;
+       
+      }
+     
+      #back-card-project6 p{
+      
+        left: 15%;
+        top: 45%;
+        font-size: 24px;
+     
+        
+      }
+
 
 
       }
@@ -589,12 +832,13 @@ ul{
         right: 6%;
         top: 20%;
         position: absolute;
+        font-family: 'Poppins', sans-serif;
     }
     
     #color{
         position: absolute;
         height: 10%;
-        background-color: #e5f4e8;
+        background-color: #739E5A;
         width: 100%;
         bottom: 0;
     }
@@ -603,21 +847,16 @@ ul{
     
         position: absolute;
         z-index: -1;
-        background-color: #e5f4e8;
+        background-color: #739E5A;
         width: 45%;
         height:100%;
     }
     #text{
-        position: absolute;
-        font-family: 'Inconsolata', monospace;
-        left: 5%;
-        top: 7%;
-        color: #3fb5a7;
-        font-size: 2rem;
-        letter-spacing: 0.8rem;
-        z-index: 2;
-        font-weight: bold;
-        opacity: 0.5;
+        
+            font-size: 1rem;
+            left: 4%;
+            top: 11%;
+        
     }
     #border{
         position: absolute;
@@ -629,19 +868,19 @@ ul{
         border-color: #E5E9F4;
     }
     .soheila-about {
-        font-family: 'Inconsolata', monospace;
+        font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
-        font-weight: 400;
-        letter-spacing: .5rem;
+        font-weight: 500;
+        letter-spacing: .1rem;
         text-transform: uppercase;
-        font-size: .83rem;
+        font-size: .75rem;
         color: black;
         /* line-height: 2rem; */
         margin: 0;
-    } 
+        font-weight: bold;}
     
     #soheila-about-developer{
-        font-family: 'Inconsolata', monospace;
+        font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
         font-weight: 400;
         letter-spacing: .2rem;
@@ -651,7 +890,7 @@ ul{
     
     
     #description{
-        font-family: sans-serif;
+        font-family: 'Poppins', sans-serif;
         -webkit-font-smoothing: antialiased;
         font-weight: 400;
         letter-spacing: .1rem;
@@ -678,9 +917,9 @@ ul{
         border:solid;
         border-radius: 20px;
         position: relative;
-        width: 75%;
+        width: 60%;
         height: 45%;
-        left: 13%;
+        left: 19%;
         animation-name: card1;
         animation-duration: 4s;
         top: 15%;
@@ -689,9 +928,9 @@ ul{
         border:solid;
         border-radius: 20px;
         position: relative;
-        width: 75%;
-        height: 45%;
-        left: 13%;
+        width: 60%;
+        height: 41%;
+        left: 19%;
         animation-name: card2;
         animation-duration: 4s;
         top:20%;
@@ -700,9 +939,9 @@ ul{
         border:solid;
         border-radius: 20px;
         position: relative;
-        width: 75%;
+        width: 60%;
         height: 45%;
-        left: 13%;
+        left: 19%;
         animation-name: card3;
         animation-duration: 4s;
         top:25%;
@@ -713,9 +952,9 @@ ul{
         border:solid;
         border-radius: 20px;
         position: relative;
-        width: 75%;
+        width: 60%;
         height: 45%;
-        left: 13%;
+        left: 19%;
         animation-name: card4;
         animation-duration: 4s;
         top:30%;
@@ -724,9 +963,9 @@ ul{
         border:solid;
         border-radius: 20px;
         position: relative;
-        width: 75%;
+        width: 60%;
         height: 45%;
-        left: 13%;
+        left: 19%;
         animation-name: card5;
         animation-duration: 4s;
         top:35%;
@@ -735,13 +974,70 @@ ul{
         border:solid;
         border-radius: 20px;
         position: relative;
-        width: 75%;
+        width: 60%;
         height: 45%;
-        left: 13%;
+        left: 19%;
         animation-name: card6;
         animation-duration: 4s;
         top:40%;
     }
+
+
+    #back-card-project1 p{
+
+        left: 11%;
+        top: 44%;
+        font-size: 30px;
+
+        
+      }
+      
+ 
+      #back-card-project2 p{
+         left: 11%;
+        top: 78%;
+        font-size: 30px;
+  
+        
+      }
+    
+     
+      #back-card-project3 p{
+
+        left: 11%;
+        top: 25%;
+        font-size: 30px;
+       ;
+        
+      }
+     
+    
+      #back-card-project4 p{
+ 
+        left: 26%;
+        top: 30%;
+        font-size: 30px;
+       
+        
+      }
+     
+    
+      #back-card-project5 p{
+      
+        left: 55%;
+        top: 40%;
+        font-size: 24px;
+       
+      }
+     
+      #back-card-project6 p{
+      
+        left: 15%;
+        top: 45%;
+        font-size: 24px;
+     
+        
+      }
 
     /* footer */
     footer{
@@ -749,7 +1045,7 @@ ul{
         position: relative;
         bottom: 25%;
         width: 100%;
-        background-color: #021D44;
+        background-color: #032A33;
         top:100%;
     }
     #links .fa-github-square{
