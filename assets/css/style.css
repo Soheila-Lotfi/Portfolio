@@ -106,7 +106,7 @@ header #developer{
 } */
 #myimage {
     width: 30%;
-    height: 70%;
+    height: 63%;
 
     display: inline-block;
     position: absolute;
@@ -432,7 +432,7 @@ background-size: cover;
     left: 15%;
     top: 45%;
     font-size: 30px;
-    color: #ea977d;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     
   }
